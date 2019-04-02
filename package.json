@@ -1,0 +1,22 @@
+{
+  "name": "intermediate-express",
+  "version": "1.0.0",
+  "description": "intermediate exercise for express",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcho-bootcamp/intermediate-express.git"
+  },
+  "author": "June Hyok Cho",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jcho-bootcamp/intermediate-express/issues"
+  },
+  "homepage": "https://github.com/jcho-bootcamp/intermediate-express#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
