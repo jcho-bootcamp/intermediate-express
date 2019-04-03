@@ -1,13 +1,16 @@
 const express = require("express");
 const app = express();
 
+app.use(express.static("public"));
+app.set("view engine", "ejs");
+
 app.get("/", function (req, res) {
-  res.render("home.ejs");
+  res.render("home");
 });
 
 app.get("/exercise/:thing", function (req, res) {
   let thing = req.params.thing;
-  res.render("love.ejs", { theThing: thing });
+  res.render("love", { theThing: thing });
 });
 
 app.get("/posts", function (req, res) {
@@ -17,7 +20,7 @@ app.get("/posts", function (req, res) {
     { title: "Can you believe this Pomsky?", author: "Colt" },
   ];
 
-  res.render("posts.ejs", { posts: posts });
+  res.render("posts", { posts: posts });
 });
 
 app.listen(3000, () => console.log("Server is Listening!"));
